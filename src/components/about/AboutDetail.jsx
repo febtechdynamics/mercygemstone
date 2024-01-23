@@ -88,11 +88,6 @@ const AboutDetail = () => {
           </div>
         </div>
       </section>
-      <section className="about_section layout_padding2-top layout_padding-bottom">
-        <div className="design-box">
-          <img src="images/design-2.png" alt="" />
-        </div>
-      </section>
     </>
   );
 };

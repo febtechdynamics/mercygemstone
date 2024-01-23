@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../public/images/logo.png';
-import designImage from '../../../public/images/design-1.png';
-import gemstoneImage from '../../../public/images/opal3.png';
+import SearchBar from '../Searchbar/SearchBar';
+import "./header.css"
 
 const Header = () => {
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+
+  const toggleSearchVisibility = () => {
+    setIsSearchVisible(!isSearchVisible);
+  };
+
   return (
     <>
       <section className='hero_area'>
@@ -19,7 +25,7 @@ const Header = () => {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <div className="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                  <ul className="navbar-nav  ">
+                  <ul className="navbar-nav">
                     <li className="nav-item active">
                       <Link to="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
                     </li>
@@ -43,9 +49,10 @@ const Header = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="quote_btn-container ">
+                <div className="quote_btn-container">
                   <form className="form-inline">
-                    <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    <button className="btn my-2 my-sm-0 nav_search-btn" type="button" onClick={toggleSearchVisibility}></button>
+                    {isSearchVisible && <SearchBar toggleSearchVisibility={toggleSearchVisibility} />}
                   </form>
                 </div>
               </div>
