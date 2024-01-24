@@ -7,6 +7,8 @@ import Login from "./components/login/Login"
 import Contact from "./components/contact/Contact"
 import GemstoneDetail from './components/gemstoneDetaill/GemstonDetail';
 import IndustrialDetail from './components/IndustrialDetail/IndustrialDetail';
+import GemstoneList from './components/GemstonList/GemstonList';
+import IndustrialList from './components/IndutrialList/IndustrialList';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Route path="/about" element={<AboutDetail/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gemston-list" element={<GemstoneList />} />
+            <Route path="/industrial-list" element={<IndustrialList />} />
         </Route>
       </Routes>
     </>

@@ -190,12 +190,12 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background: linear-gradient(to left, #fb930a 25%, #fac74f, #f5e176, #f4e891, #ffffff),
-  linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-  /* background-image: url(../images/hero-bg.png);
+  /* background: linear-gradient(to left, #fb930a 25%, #fac74f, #f5e176, #f4e891, #ffffff),
+  linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); */
+  background-image: url(../images/hero-bg.png);
   background-size: cover;
   background-position: bottom right;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .slider_section .row {

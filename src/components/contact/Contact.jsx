@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import whatsapp from "../../../public/images/whatsapp.png"
+import forContact from "../../../public/images/for_contact.png"
 
 const Contact = () => {
   return (
@@ -39,6 +40,11 @@ const Contact = () => {
               </button>
             </div>
           </form>
+        </div>
+        <div className="col-md-6">
+          <div className="map_container">
+            <img src={forContact} alt="" />
+          </div>
         </div>
         <div className="container">
           <div className="row">

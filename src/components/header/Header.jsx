@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../public/images/logo.png';
 import SearchBar from '../Searchbar/SearchBar';
+import SearchIcon from '@mui/icons-material/Search';
 import "./header.css"
 
 const Header = () => {
@@ -37,23 +38,20 @@ const Header = () => {
                         Products
                       </div>
                       <div className="dropdown-menu" aria-labelledby="productsDropdown">
-                        <Link to="/gemstone" className="dropdown-item">Gemstone</Link>
-                        <Link to="/industrial-material" className="dropdown-item">Industrial Material</Link>
+                        <Link to="/gemston-list" className="dropdown-item">Gemstone</Link>
+                        <Link to="/industrial-list" className="dropdown-item">Industrial Material</Link>
                       </div>
                     </li>
                     <li className="nav-item">
                       <Link to="/contact" className="nav-link">Contact us</Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/login" className="nav-link">Login</Link>
+                          <div className="nave_search">
+                          <button className='search_button' onClick={toggleSearchVisibility}><SearchIcon/></button>
+                          {isSearchVisible && <SearchBar toggleSearchVisibility={toggleSearchVisibility} />}
+                          </div>
                     </li>
                   </ul>
-                </div>
-                <div className="quote_btn-container">
-                  <form className="form-inline">
-                    <button className="btn my-2 my-sm-0 nav_search-btn" type="button" onClick={toggleSearchVisibility}></button>
-                    {isSearchVisible && <SearchBar toggleSearchVisibility={toggleSearchVisibility} />}
-                  </form>
                 </div>
               </div>
             </nav>

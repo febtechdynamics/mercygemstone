@@ -18,7 +18,7 @@ const AboutDetail = () => {
             <div className="col-md-6">
               <div className="detail-box">
                 <div className="heading_container">
-                  <h2>About Jewellery Shop</h2>
+                  <h2>About Us</h2>
                 </div>
                 <p>
                   Mercy Gem is one of the well-known gemstone and industrial minerals exporter companies in Ethiopia.

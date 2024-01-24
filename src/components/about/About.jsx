@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import aboutImg from "../../../public/images/about-img.png"
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
           <div className="detail-box">
             <div className="heading_container">
               <h2>
-                About Jewellery Shop
+                About Us
               </h2>
             </div>
             <p>Mercy Gem is one of known gemstone and industrial minerals exporter company in Ethiopia.
@@ -30,7 +31,7 @@ const About = () => {
         </div>
         <div className="col-md-6">
           <div className="img-box">
-            <img src="images/about-img.png" alt=""/>
+            <img src={aboutImg} alt=""/>
           </div>
         </div>
       </div>

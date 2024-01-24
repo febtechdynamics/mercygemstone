@@ -5,9 +5,9 @@ import img3 from '../../public/images/i-3.png';
 import img4 from '../../public/images/ring-img.jpg';
 
 import Lithium from '../../public/images/Lithium.jpg';
-import chromite from '../../public/images/chromite .jpg';
+import chromite from '../../public/images/chromite.jpg';
 import quartz from '../../public/images/quartz.jpg';
-import copper from '../../public/images/copper.webp';
+import copper from '../../public/images/copper.jpg';
 
 const industrialItemsData = [
   { id: 1, name: 'Lithium', image: Lithium, price: '$20.00', description: 'Industrial material for batteries' },

@@ -5,6 +5,36 @@ import { industrialItemsData } from '../productdata';
 
 const IndustrialDetail = () => {
   const { id } = useParams();
+
+
+// useEffect(() => {
+// 	fetch("http://localhost:3000/products")
+// 		.then((res) => res.json())
+// 		.then((products) => {
+// 			const productList = products.products;
+// 			const industrialData = productList.filter(
+// 				(product) => product.product_url === productID
+// 			);
+// 			setIndustrialData(industrialData);
+// 		})
+// 		.catch(() => console.log("Error: unable to fetch!!"));
+// }, [productID]);
+
+// useEffect(() => {
+//   axios.get("http://localhost:3000/products")
+//     .then((response) => {
+//       const productList = response.data.products;
+//       const industrialData = productList.filter(
+//         (product) => product.product_url === productID
+//       );
+//       setIndustrialData(industrialData);
+//     })
+//     .catch((error) => {
+//       console.error("Error: unable to fetch!!", error);
+//     });
+// }, [productID]);
+
+
   const [industrialData, setIndustrialData] = useState(null);
 
   useEffect(() => {
@@ -36,3 +66,5 @@ const IndustrialDetail = () => {
 };
 
 export default IndustrialDetail;
+
+

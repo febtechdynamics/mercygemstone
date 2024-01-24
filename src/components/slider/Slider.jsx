@@ -34,7 +34,7 @@ const Slider = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="img-box">
-                      <img src="images/opal3.png" alt=""/>
+                      <img src="images/opal.png" alt=""/>
                     </div>
                   </div>
                 </div>
