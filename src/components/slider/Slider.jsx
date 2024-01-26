@@ -28,7 +28,7 @@ const Slider = () => {
                         Get all kinds of Gemstone and Industrial material in Ethiopia.
                       </p>
                       <div>
-                        <Link to="/contact">Contact Us</Link>
+                        <Link className='btn' to="/contact">Contact Us</Link>
                       </div>
                     </div>
                   </div>

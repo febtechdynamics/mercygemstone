@@ -9,7 +9,7 @@ import IndustrialItems from '../industrialItems/IndustrialItems';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
         <Slider/>
         <GemstoneItems/>
         <IndustrialItems/>

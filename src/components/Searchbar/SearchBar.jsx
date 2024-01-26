@@ -7,16 +7,16 @@ import './SearchBar.css';
 const SearchBar = ({ toggleSearchVisibility }) => {
   return (
     <div className="search-bar">
-      <div className='search_search_icone'>
-        <div>
-            <span><SearchIcon/></span>
-        </div>
+      <div className='search_icon'>
         <div>
             <input type="text" placeholder="Search..." />
         </div>
+        <div>
+            <span><SearchIcon/></span>
+        </div>
       </div>
       <div className='Search_close'>
-        <button onClick={toggleSearchVisibility}><CloseIcon /></button>
+        <div onClick={toggleSearchVisibility}><CloseIcon /></div>
       </div>
     </div>
   );

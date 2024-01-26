@@ -1,15 +1,13 @@
 .gemstone_container {
     width: 90%;
     margin: auto;
-    align-gemstone: center;
     text-align: center;
 }
 
-.single_iteme{
-    align-gemstone: center;
+.single_item{
     text-align: center;
 }
-.single_iteme img{
+.single_item img{
     width: 200px;
     height: 200px;
 }
@@ -17,18 +15,9 @@
     margin: 50px 0;
 }
 
-
-.gemstone_container .single_iteme p button{
-    background: none;
-    border-style: none;
-    padding: 5px 10px;
-    background: black;
-    color: white;
+.react-multiple-carousel__arrow {
+    z-index: 1 !important;
+    outline: none;
+    border: none;
 }
 
-.gemstone_container .single_iteme p button:hover {
-    background: rgb(245, 243, 243);
-    color: rgb(0, 0, 0);
-    border: 1px solid black;
-    text-decoration: underline;
-}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+}
+
+.home {
+    margin-top: -12vh;
+}
+
+.btn-mod {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-mod:hover {
+    border: 1px solid #000;
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}

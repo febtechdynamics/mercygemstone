@@ -26,12 +26,12 @@ const GemstoneItems = () => {
         responsive={responsive}
       >
         {itemsData.map((item) => (
-          <div key={item.id} className='single_iteme'>
+          <div key={item.id} className='single_item'>
             <img className='gemstone_image' src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
             <p>
-              <Link to={`/gemstone/${item.id}`}>
-                <button>See More</button>
+              <Link className='btn-mod' to={`/gemstone/${item.id}`}>
+                See More
               </Link>
             </p>
           </div>

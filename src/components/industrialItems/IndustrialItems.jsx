@@ -9,18 +9,8 @@ const IndustrialItems = () => {
     <div className='industrial_container'>
       <h1 className='industrial_title'>Industrial Material</h1>
       <div className='industrial_material_container'>
-        <div className='flex-container'>
-          {industrialItemsData.slice(0, 2).map((item) => (
-            <Link key={item.id} to={`/industrial/${item.id}`} className='industrial_item'>
-              <img className='industrial_material_image' src={item.image} alt={item.name} />
-              <div className='industrial_hover'>
-                <p>View Details</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-        <div className='flex-container'>
-          {industrialItemsData.slice(2).map((item) => (
+        <div className='item-container'>
+          {industrialItemsData.map((item) => (
             <Link key={item.id} to={`/industrial/${item.id}`} className='industrial_item'>
               <img className='industrial_material_image' src={item.image} alt={item.name} />
               <div className='industrial_hover'>
